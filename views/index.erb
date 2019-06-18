@@ -26,7 +26,7 @@
     <% wall_posts = ["First post!", "Second post!", "Hello, it's your mother. Why don't you ever call me?"] %> <!-- Interesting. If I leave off that %> tag, that displays the ENTIRE line of code by mistake! -->
     <ul>
       <% wall_posts.each do |post| %>
-        <li><% post %></li>
+        <li><%= post %></li> <!-- If I leave off that = sign, that displays blank list items (but still shows the bullet points). -->
       <% end %>
     </ul>
   </body>
